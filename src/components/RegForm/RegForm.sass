@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Scada:wght@400;700&display=swap')
+
+$roboto: 'Roboto', serif
+
+.reg-form
+  width: 580px
+  min-height: 717px
+  margin: 0 auto
+  background-color: white
+  border-radius: 50px 50px
+  .login-form__head
+    padding: 25px 25px 0 25px
+    color: #14142B
+  .login-form__tel
+    margin-top: 30px
+    position: relative
+    width: 460px
+    padding: 0 60px
+    input
+      padding: 25px 0 16px 64px
+      width: 85%
+      height: inherit
+      font-family: $roboto
+      font-size: 16px
+      border-radius: 16px
+      border: 2px solid #14142B
+    label
+      position: absolute
+      left: 126px
+      top: 10px
+      font-family: $roboto
+      font-size: 14px
+      color: #6E7191
+      font-weight: 500
+    img
+      position: absolute
+      top: 21px
+      margin-left: 20px
+  .login-form__password
+    margin-top: 30px
+    position: relative
+    width: 460px
+    padding: 0 60px
+    input
+      padding: 25px 0 16px 64px
+      width: 85%
+      height: inherit
+      font-family: $roboto
+      font-size: 16px
+      border-radius: 16px
+      border: 2px solid #14142B
+    label
+      position: absolute
+      left: 126px
+      top: 10px
+      font-family: $roboto
+      font-size: 14px
+      color: #6E7191
+      font-weight: 500
+    .login-form__password-img
+      position: absolute
+      top: 21px
+      margin-left: 20px
+      width: 24px
+      cursor: pointer
+    .active
+      padding: 25px 0 16px 64px
+      width: 85%
+      height: inherit
+      font-family: $roboto
+      font-size: 16px
+      border: none
+      border-radius: 16px
+      border: 2px solid #FC441D !important
+      outline: none
+    .login-form__password-forget
+      text-align: left
+      margin-top: 25px
+      font-family: $roboto
+      height: 38px
+      a
+        color: #4E4B66
+        text-decoration: none
+        line-height: 28px
+        font-weight: 500
+  .login-form__email
+    margin-top: 30px
+    position: relative
+    width: 460px
+    padding: 0 60px
+    input
+      padding: 25px 0 16px 64px
+      width: 85%
+      height: inherit
+      font-family: $roboto
+      font-size: 16px
+      border-radius: 16px
+      border: 2px solid #14142B
+    label
+      position: absolute
+      left: 126px
+      top: 10px
+      font-family: $roboto
+      font-size: 14px
+      color: #6E7191
+      font-weight: 500
+    img
+      position: absolute
+      top: 21px
+      margin-left: 20px
+  .login-form__submit
+    height: 60px
+    padding: 0 60px
+    margin-top: 32px
+    button
+      width: 100%
+      padding: 20px 10px
+      border-radius: 40px
+      outline: none
+      background-color: #FC441D
+      color: white
+      font-size: 16px
+      border: none
+      cursor: pointer
+      font-family: $roboto
+      font-weight: 500
+  .login-form__password-repeat
+    margin-top: 30px
+    position: relative
+    width: 460px
+    padding: 0 60px
+    input
+      padding: 25px 0 16px 64px
+      width: 85%
+      height: inherit
+      font-family: $roboto
+      font-size: 16px
+      border-radius: 16px
+      border: 2px solid #14142B
+    label
+      position: absolute
+      left: 126px
+      top: 10px
+      font-family: $roboto
+      font-size: 14px
+      color: #6E7191
+      font-weight: 500
+    .login-form__password-img
+      position: absolute
+      top: 21px
+      margin-left: 20px
+      width: 24px
+      cursor: pointer
+    .active
+      padding: 25px 0 16px 64px
+      width: 85%
+      height: inherit
+      font-family: $roboto
+      font-size: 16px
+      border: none
+      border-radius: 16px
+      border: 2px solid #FC441D !important
+      outline: none
+  .login-form__check
+    text-align: left
+    margin-top: 30px
+    position: relative
+    width: 460px
+    padding: 0 60px
+    label
+      position: absolute
+      font-size: 14px
+      color: #14142B
+      font-weight: 500
+      top: 9px
+      margin-left: 16px
+    input[type="checkbox"]
+      position: relative
+      width: 32px
+      height: 32px
+      color: black
+      border: 1px solid gray
+      border-radius: 4px
+      appearance: none
+      outline: 0
+      cursor: pointer
+      transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1)
+      &::before
+        position: absolute
+        content: ''
+        display: block
+        top: 4px
+        left: 10px
+        width: 8px
+        height: 14px
+        border-style: solid
+        border-color: white
+        border-width: 0 2px 2px 0
+        transform: rotate(45deg)
+        opacity: 0
+      &:checked
+        color: white
+        border-color: #fc441d
+        background: #fc441d
+        &::before
+          opacity: 1
+  .login-form__underheadreg
+    h2
+      color: #6E7191
+      font-size: 24px
+      font-family: $roboto
+      font-weight: 500
+  .back
+    width: 54px
+    height: 54px
+    position: absolute
+    background-color: #FC441D
+    border-radius: 50%
+    margin-left: -25px
+    margin-top: 30px
+    img
+      margin-top: 20px
